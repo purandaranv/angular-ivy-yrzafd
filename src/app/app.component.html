@@ -1,0 +1,39 @@
+<h2>Get Request: https://jsonplaceholder.typicode.com/comments</h2>
+<table>
+  <tr>
+    <td>Id</td>
+    <td>Post Id</td>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Body</td>
+  </tr>
+  <tr *ngFor="let com of listcomments">
+    <td>{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+
+<h2>Get Request: https://jsonplaceholder.typicode.com/posts?userId=1</h2>
+<table>
+  <tr>
+    <td>Id</td>
+    <td>User Id</td>
+    <td>title</td>
+    <td>Body</td>
+  </tr>
+  <tr *ngFor="let com of listPosts">
+    <td>{{com.userId}}</td>
+    <td>{{com.id}}</td>
+    <td>{{com.title}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+
+<h2>Post Request: https://jsonplaceholder.typicode.com/posts</h2>
+<p>Id: {{objPosts?.id}}</p>
+<p>userId: {{objPosts?.userId}}</p>
+<p>title: {{objPosts?.title}}</p>
+<p>body: {{objPosts?.body}}</p>
